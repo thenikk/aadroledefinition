@@ -1,0 +1,64 @@
+trigger:
+- master
+variables:
+ - group: AzureAppRegistration
+pool:
+  vmImage: ubuntu-latest
+steps:
+- checkout: self 
+  persistCredentials: true
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      <#
+      Version: 1.0
+      #>      
+      
+      Function Get-AuthHeader {
+          param (
+              [parameter(Mandatory = $true)]$tenantId,
+              [parameter(Mandatory = $true)]$clientId,
+              [parameter(Mandatory = $true)]$clientSecret
+          )
+          $authBody = @{
+              client_id     = $clientId
+              client_secret = $clientSecret
+              scope         = "https://graph.microsoft.com/.default"
+              grant_type    = "client_credentials"
+          }
+          $uri = "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token"
+          $accessToken = Invoke-WebRequest -Uri $uri -ContentType "application/x-www-form-urlencoded" -Body $authBody -Method Post -ErrorAction Stop -UseBasicParsing
+          $accessToken = $accessToken.content | ConvertFrom-Json
+          $authHeader = @{
+              'Content-Type'  = 'application/json'
+              'Authorization' = "Bearer " + $accessToken.access_token
+              'ExpiresOn'     = $accessToken.expires_in
+          }
+          return $authHeader
+      }
+      #################################################################################################
+      ########################################### Start ###############################################
+      #################################################################################################
+      # Variables
+      $tenantId = "$(tenantId)"
+      $clientId = "$(clientId)"
+      $clientSecret = "$(AppSecret)"
+      # Authentication
+      $global:authToken = Get-AuthHeader -tenantId $tenantId -clientId $clientId -clientSecret $clientSecret
+      $GraphRequest = (Invoke-RestMethod -Uri ('https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions?$select=description,displayName,rolePermissions,isBuiltIn') -ContentType 'application/json' -Headers $authToken -Method GET).Value
+      $GraphRequest = $GraphRequest | Where-Object { $_.isBuiltIn -eq $true } | Select-Object description, displayName, RolePermissions 
+      $GraphRequest | ForEach-Object {
+          $FileName = "./" + ($_.displayName).replace(" ", "") + ".json"
+          $_ | ConvertTo-Json -Depth 5 | Out-File -FilePath $FileName
+      }
+      dir
+- script: |
+    git config --global user.email "automation@azuredevops.com"
+    git config --global user.name "thenikk"
+    git checkout -b main
+    git add -A
+    git commit -m "deployment $(Build.BuildNumber)"
+    git push --set-upstream origin main 
+  displayName: Git
+  workingDirectory: $(System.DefaultWorkingDirectory)
