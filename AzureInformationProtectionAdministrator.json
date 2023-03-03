@@ -1,0 +1,18 @@
+{
+  "description": "Can manage all aspects of the Azure Information Protection product.",
+  "displayName": "Azure Information Protection Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/authorizationPolicy/standard/read",
+        "microsoft.azure.informationProtection/allEntities/allTasks",
+        "microsoft.azure.serviceHealth/allEntities/allTasks",
+        "microsoft.azure.supportTickets/allEntities/allTasks",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Can create and manage all aspects of Windows Update deployments through the Windows Update for Business deployment service.",
+  "displayName": "Windows Update Deployment Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.windows.updatesDeployments/allEntities/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

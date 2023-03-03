@@ -1,0 +1,14 @@
+{
+  "description": "Access the analytical capabilities in Microsoft Viva Insights and run custom queries.",
+  "displayName": "Insights Analyst",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.insights/queries/allProperties/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

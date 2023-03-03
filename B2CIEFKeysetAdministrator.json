@@ -1,0 +1,12 @@
+{
+  "description": "Can manage secrets for federation and encryption in the Identity Experience Framework (IEF).",
+  "displayName": "B2C IEF Keyset Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/b2cTrustFrameworkKeySet/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

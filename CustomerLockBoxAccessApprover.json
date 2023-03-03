@@ -1,0 +1,13 @@
+{
+  "description": "Can approve Microsoft support requests to access customer organizational data.",
+  "displayName": "Customer LockBox Access Approver",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.lockbox/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

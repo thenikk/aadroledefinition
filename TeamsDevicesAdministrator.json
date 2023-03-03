@@ -1,0 +1,13 @@
+{
+  "description": "Can perform management related tasks on Teams certified devices.",
+  "displayName": "Teams Devices Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.webPortal/allEntities/standard/read",
+        "microsoft.teams/devices/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

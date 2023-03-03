@@ -1,0 +1,26 @@
+{
+  "description": "Limited access to manage devices in Azure AD.",
+  "displayName": "Cloud Device Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/auditLogs/allProperties/read",
+        "microsoft.directory/authorizationPolicy/standard/read",
+        "microsoft.directory/bitlockerKeys/key/read",
+        "microsoft.directory/deletedItems.devices/delete",
+        "microsoft.directory/deletedItems.devices/restore",
+        "microsoft.directory/devices/delete",
+        "microsoft.directory/devices/disable",
+        "microsoft.directory/devices/enable",
+        "microsoft.directory/deviceManagementPolicies/standard/read",
+        "microsoft.directory/deviceManagementPolicies/basic/update",
+        "microsoft.directory/deviceRegistrationPolicy/standard/read",
+        "microsoft.directory/deviceRegistrationPolicy/basic/update",
+        "microsoft.directory/signInReports/allProperties/read",
+        "microsoft.azure.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.serviceHealth/allEntities/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "description": "Can create attack payloads that an administrator can initiate later.",
+  "displayName": "Attack Payload Author",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.protectionCenter/attackSimulator/payload/allProperties/allTasks",
+        "microsoft.office365.protectionCenter/attackSimulator/reports/allProperties/read"
+      ],
+      "condition": null
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "description": "Can read security information and reports in Azure AD and Office 365.",
+  "displayName": "Security Reader",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/accessReviews/definitions/allProperties/read",
+        "microsoft.directory/auditLogs/allProperties/read",
+        "microsoft.directory/authorizationPolicy/standard/read",
+        "microsoft.directory/bitlockerKeys/key/read",
+        "microsoft.directory/domains/federationConfiguration/standard/read",
+        "microsoft.directory/entitlementManagement/allProperties/read",
+        "microsoft.directory/identityProtection/allProperties/read",
+        "microsoft.directory/namedLocations/standard/read",
+        "microsoft.directory/policies/standard/read",
+        "microsoft.directory/policies/owners/read",
+        "microsoft.directory/policies/policyAppliedTo/read",
+        "microsoft.directory/conditionalAccessPolicies/standard/read",
+        "microsoft.directory/conditionalAccessPolicies/owners/read",
+        "microsoft.directory/conditionalAccessPolicies/policyAppliedTo/read",
+        "microsoft.directory/privilegedIdentityManagement/allProperties/read",
+        "microsoft.directory/provisioningLogs/allProperties/read",
+        "microsoft.directory/signInReports/allProperties/read",
+        "microsoft.azure.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.protectionCenter/allEntities/standard/read",
+        "microsoft.office365.protectionCenter/attackSimulator/payload/allProperties/read",
+        "microsoft.office365.protectionCenter/attackSimulator/reports/allProperties/read",
+        "microsoft.office365.protectionCenter/attackSimulator/simulation/allProperties/read",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

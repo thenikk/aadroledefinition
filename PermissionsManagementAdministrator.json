@@ -1,0 +1,12 @@
+{
+  "description": "Manage all aspects of Entra Permissions Management.",
+  "displayName": "Permissions Management Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.permissionsManagement/allEntities/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

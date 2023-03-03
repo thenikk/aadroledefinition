@@ -1,0 +1,24 @@
+{
+  "description": "Creates and manages security events.",
+  "displayName": "Security Operator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/auditLogs/allProperties/read",
+        "microsoft.directory/authorizationPolicy/standard/read",
+        "microsoft.directory/cloudAppSecurity/allProperties/allTasks",
+        "microsoft.directory/identityProtection/allProperties/allTasks",
+        "microsoft.directory/privilegedIdentityManagement/allProperties/read",
+        "microsoft.directory/provisioningLogs/allProperties/read",
+        "microsoft.directory/signInReports/allProperties/read",
+        "microsoft.azure.advancedThreatProtection/allEntities/allTasks",
+        "microsoft.azure.supportTickets/allEntities/allTasks",
+        "microsoft.intune/allEntities/read",
+        "microsoft.office365.securityComplianceCenter/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.windows.defenderAdvancedThreatProtection/allEntities/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

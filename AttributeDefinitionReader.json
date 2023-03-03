@@ -1,0 +1,13 @@
+{
+  "description": "Read the definition of custom security attributes.",
+  "displayName": "Attribute Definition Reader",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/attributeSets/allProperties/read",
+        "microsoft.directory/customSecurityAttributeDefinitions/allProperties/read"
+      ],
+      "condition": null
+    }
+  ]
+}

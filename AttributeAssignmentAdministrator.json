@@ -1,0 +1,19 @@
+{
+  "description": "Assign custom security attribute keys and values to supported Azure AD objects.",
+  "displayName": "Attribute Assignment Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/attributeSets/allProperties/read",
+        "microsoft.directory/customSecurityAttributeDefinitions/allProperties/read",
+        "microsoft.directory/devices/customSecurityAttributes/read",
+        "microsoft.directory/devices/customSecurityAttributes/update",
+        "microsoft.directory/servicePrincipals/customSecurityAttributes/read",
+        "microsoft.directory/servicePrincipals/customSecurityAttributes/update",
+        "microsoft.directory/users/customSecurityAttributes/read",
+        "microsoft.directory/users/customSecurityAttributes/update"
+      ],
+      "condition": null
+    }
+  ]
+}

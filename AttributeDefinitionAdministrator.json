@@ -1,0 +1,13 @@
+{
+  "description": "Define and manage the definition of custom security attributes.",
+  "displayName": "Attribute Definition Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/attributeSets/allProperties/allTasks",
+        "microsoft.directory/customSecurityAttributeDefinitions/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

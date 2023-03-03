@@ -1,0 +1,14 @@
+{
+  "description": "Can create application registrations independent of the 'Users can register applications' setting.",
+  "displayName": "Application Developer",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/applications/createAsOwner",
+        "microsoft.directory/oAuth2PermissionGrants/createAsOwner",
+        "microsoft.directory/servicePrincipals/createAsOwner"
+      ],
+      "condition": null
+    }
+  ]
+}

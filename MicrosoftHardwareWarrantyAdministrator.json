@@ -1,0 +1,17 @@
+{
+  "description": "Create and manage all aspects warranty claims and entitlements for Microsoft manufactured hardware, like Surface and HoloLens.",
+  "displayName": "Microsoft Hardware Warranty Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.hardware.support/shippingAddress/allProperties/allTasks",
+        "microsoft.hardware.support/shippingStatus/allProperties/read",
+        "microsoft.hardware.support/warrantyClaims/allProperties/allTasks",
+        "microsoft.office365.messageCenter/messages/read",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

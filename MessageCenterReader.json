@@ -1,0 +1,13 @@
+{
+  "description": "Can read messages and updates for their organization in Office 365 Message Center only.",
+  "displayName": "Message Center Reader",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.messageCenter/messages/read",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

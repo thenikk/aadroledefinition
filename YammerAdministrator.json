@@ -1,0 +1,25 @@
+{
+  "description": "Manage all aspects of the Yammer service.",
+  "displayName": "Yammer Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/groups/hiddenMembers/read",
+        "microsoft.directory/groups.unified/create",
+        "microsoft.directory/groups.unified/delete",
+        "microsoft.directory/groups.unified/restore",
+        "microsoft.directory/groups.unified/basic/update",
+        "microsoft.directory/groups.unified/members/update",
+        "microsoft.directory/groups.unified/owners/update",
+        "microsoft.office365.messageCenter/messages/read",
+        "microsoft.office365.network/performance/allProperties/read",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.usageReports/allEntities/allProperties/read",
+        "microsoft.office365.webPortal/allEntities/standard/read",
+        "microsoft.office365.yammer/allEntities/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "description": "Can configure identity providers for use in direct federation.",
+  "displayName": "External Identity Provider Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/domains/federation/update",
+        "microsoft.directory/identityProviders/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

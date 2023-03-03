@@ -1,0 +1,47 @@
+{
+  "description": "Can manage all aspects of the Intune product.",
+  "displayName": "Intune Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/bitlockerKeys/key/read",
+        "microsoft.directory/contacts/create",
+        "microsoft.directory/contacts/delete",
+        "microsoft.directory/contacts/basic/update",
+        "microsoft.directory/deletedItems.devices/delete",
+        "microsoft.directory/deletedItems.devices/restore",
+        "microsoft.directory/devices/create",
+        "microsoft.directory/devices/delete",
+        "microsoft.directory/devices/disable",
+        "microsoft.directory/devices/enable",
+        "microsoft.directory/devices/basic/update",
+        "microsoft.directory/devices/extensionAttributeSet1/update",
+        "microsoft.directory/devices/extensionAttributeSet2/update",
+        "microsoft.directory/devices/extensionAttributeSet3/update",
+        "microsoft.directory/devices/registeredOwners/update",
+        "microsoft.directory/devices/registeredUsers/update",
+        "microsoft.directory/deviceManagementPolicies/standard/read",
+        "microsoft.directory/deviceRegistrationPolicy/standard/read",
+        "microsoft.directory/groups/hiddenMembers/read",
+        "microsoft.directory/groups.security/create",
+        "microsoft.directory/groups.security/delete",
+        "microsoft.directory/groups.security/basic/update",
+        "microsoft.directory/groups.security/classification/update",
+        "microsoft.directory/groups.security/dynamicMembershipRule/update",
+        "microsoft.directory/groups.security/members/update",
+        "microsoft.directory/groups.security/owners/update",
+        "microsoft.directory/groups.security/visibility/update",
+        "microsoft.directory/users/basic/update",
+        "microsoft.directory/users/manager/update",
+        "microsoft.directory/users/photo/update",
+        "microsoft.azure.supportTickets/allEntities/allTasks",
+        "microsoft.cloudPC/allEntities/allProperties/allTasks",
+        "microsoft.intune/allEntities/allTasks",
+        "microsoft.office365.organizationalMessages/allEntities/allProperties/read",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

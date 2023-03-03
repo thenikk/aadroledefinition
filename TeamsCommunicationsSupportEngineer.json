@@ -1,0 +1,17 @@
+{
+  "description": "Can troubleshoot communications issues within Teams using advanced tools.",
+  "displayName": "Teams Communications Support Engineer",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/authorizationPolicy/standard/read",
+        "microsoft.azure.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.skypeForBusiness/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read",
+        "microsoft.teams/callQuality/allProperties/read"
+      ],
+      "condition": null
+    }
+  ]
+}

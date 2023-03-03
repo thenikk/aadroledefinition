@@ -1,0 +1,13 @@
+{
+  "description": "Can manage all aspects of the Cloud App Security product.",
+  "displayName": "Cloud App Security Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/cloudAppSecurity/allProperties/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

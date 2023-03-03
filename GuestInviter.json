@@ -1,0 +1,25 @@
+{
+  "description": "Can invite guest users independent of the 'members can invite guests' setting.",
+  "displayName": "Guest Inviter",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/users/inviteGuest",
+        "microsoft.directory/users/standard/read",
+        "microsoft.directory/users/appRoleAssignments/read",
+        "microsoft.directory/users/deviceForResourceAccount/read",
+        "microsoft.directory/users/directReports/read",
+        "microsoft.directory/users/licenseDetails/read",
+        "microsoft.directory/users/manager/read",
+        "microsoft.directory/users/memberOf/read",
+        "microsoft.directory/users/oAuth2PermissionGrants/read",
+        "microsoft.directory/users/ownedDevices/read",
+        "microsoft.directory/users/ownedObjects/read",
+        "microsoft.directory/users/photo/read",
+        "microsoft.directory/users/registeredDevices/read",
+        "microsoft.directory/users/scopedRoleMemberOf/read"
+      ],
+      "condition": null
+    }
+  ]
+}

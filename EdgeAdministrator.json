@@ -1,0 +1,14 @@
+{
+  "description": "Manage all aspects of Microsoft Edge.",
+  "displayName": "Edge Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.edge/allEntities/allProperties/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

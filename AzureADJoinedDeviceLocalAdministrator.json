@@ -1,0 +1,13 @@
+{
+  "description": "Users assigned to this role are added to the local administrators group on Azure AD-joined devices.",
+  "displayName": "Azure AD Joined Device Local Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/groupSettings/standard/read",
+        "microsoft.directory/groupSettingTemplates/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

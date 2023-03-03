@@ -1,0 +1,22 @@
+{
+  "description": "Has access to topic management dashboard and can manage content.",
+  "displayName": "Knowledge Manager",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/groups.security/create",
+        "microsoft.directory/groups.security/createAsOwner",
+        "microsoft.directory/groups.security/delete",
+        "microsoft.directory/groups.security/basic/update",
+        "microsoft.directory/groups.security/members/update",
+        "microsoft.directory/groups.security/owners/update",
+        "microsoft.office365.knowledge/contentUnderstanding/analytics/allProperties/read",
+        "microsoft.office365.knowledge/knowledgeNetwork/topicVisibility/allProperties/allTasks",
+        "microsoft.office365.sharePoint/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

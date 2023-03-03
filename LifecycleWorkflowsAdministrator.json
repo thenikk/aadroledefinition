@@ -1,0 +1,12 @@
+{
+  "description": "Create and manage all aspects of workflows and tasks associated with Lifecycle Workflows in Azure AD.",
+  "displayName": "Lifecycle Workflows Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/lifecycleWorkflows/workflows/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

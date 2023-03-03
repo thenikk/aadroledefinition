@@ -1,0 +1,33 @@
+{
+  "description": "Can manage role assignments in Azure AD, and all aspects of Privileged Identity Management.",
+  "displayName": "Privileged Role Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/accessReviews/definitions.applications/allProperties/read",
+        "microsoft.directory/accessReviews/definitions.directoryRoles/allProperties/allTasks",
+        "microsoft.directory/accessReviews/definitions.groupsAssignableToRoles/allProperties/update",
+        "microsoft.directory/accessReviews/definitions.groupsAssignableToRoles/create",
+        "microsoft.directory/accessReviews/definitions.groupsAssignableToRoles/delete",
+        "microsoft.directory/accessReviews/definitions.groups/allProperties/read",
+        "microsoft.directory/administrativeUnits/allProperties/allTasks",
+        "microsoft.directory/authorizationPolicy/allProperties/allTasks",
+        "microsoft.directory/directoryRoles/allProperties/allTasks",
+        "microsoft.directory/groupsAssignableToRoles/create",
+        "microsoft.directory/groupsAssignableToRoles/delete",
+        "microsoft.directory/groupsAssignableToRoles/restore",
+        "microsoft.directory/groupsAssignableToRoles/allProperties/update",
+        "microsoft.directory/oAuth2PermissionGrants/allProperties/allTasks",
+        "microsoft.directory/privilegedIdentityManagement/allProperties/allTasks",
+        "microsoft.directory/roleAssignments/allProperties/allTasks",
+        "microsoft.directory/roleDefinitions/allProperties/allTasks",
+        "microsoft.directory/scopedRoleMemberships/allProperties/allTasks",
+        "microsoft.directory/servicePrincipals/appRoleAssignedTo/update",
+        "microsoft.directory/servicePrincipals/permissions/update",
+        "microsoft.directory/servicePrincipals/managePermissionGrantsForAll.microsoft-company-admin",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

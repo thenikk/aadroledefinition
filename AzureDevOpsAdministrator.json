@@ -1,0 +1,12 @@
+{
+  "description": "Can manage Azure DevOps organization policy and settings.",
+  "displayName": "Azure DevOps Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.azure.devOps/allEntities/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

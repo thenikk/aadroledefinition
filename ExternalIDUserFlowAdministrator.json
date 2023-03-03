@@ -1,0 +1,12 @@
+{
+  "description": "Can create and manage all aspects of user flows.",
+  "displayName": "External ID User Flow Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/b2cUserFlow/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

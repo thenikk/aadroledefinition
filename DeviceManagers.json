@@ -1,0 +1,21 @@
+{
+  "description": "Deprecated - Do Not Use.",
+  "displayName": "Device Managers",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/devices/standard/read",
+        "microsoft.directory/devices/memberOf/read",
+        "microsoft.directory/devices/registeredOwners/read",
+        "microsoft.directory/devices/registeredUsers/read",
+        "microsoft.directory/devices/basic/update",
+        "microsoft.directory/devices/extensionAttributeSet1/update",
+        "microsoft.directory/devices/extensionAttributeSet2/update",
+        "microsoft.directory/devices/extensionAttributeSet3/update",
+        "microsoft.directory/devices/registeredOwners/update",
+        "microsoft.directory/devices/registeredUsers/update"
+      ],
+      "condition": null
+    }
+  ]
+}

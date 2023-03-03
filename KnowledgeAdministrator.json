@@ -1,0 +1,24 @@
+{
+  "description": "Can configure knowledge, learning, and other intelligent features.",
+  "displayName": "Knowledge Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/groups.security/create",
+        "microsoft.directory/groups.security/createAsOwner",
+        "microsoft.directory/groups.security/delete",
+        "microsoft.directory/groups.security/basic/update",
+        "microsoft.directory/groups.security/members/update",
+        "microsoft.directory/groups.security/owners/update",
+        "microsoft.office365.knowledge/contentUnderstanding/allProperties/allTasks",
+        "microsoft.office365.knowledge/knowledgeNetwork/allProperties/allTasks",
+        "microsoft.office365.knowledge/learningSources/allProperties/allTasks",
+        "microsoft.office365.protectionCenter/sensitivityLabels/allProperties/read",
+        "microsoft.office365.sharePoint/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

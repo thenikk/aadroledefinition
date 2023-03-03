@@ -1,0 +1,14 @@
+{
+  "description": "Can create and manage all aspects of attack simulation campaigns.",
+  "displayName": "Attack Simulation Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.protectionCenter/attackSimulator/payload/allProperties/allTasks",
+        "microsoft.office365.protectionCenter/attackSimulator/reports/allProperties/read",
+        "microsoft.office365.protectionCenter/attackSimulator/simulation/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

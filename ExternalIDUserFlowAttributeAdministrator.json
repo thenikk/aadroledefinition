@@ -1,0 +1,12 @@
+{
+  "description": "Can create and manage the attribute schema available to all user flows.",
+  "displayName": "External ID User Flow Attribute Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/b2cUserAttribute/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

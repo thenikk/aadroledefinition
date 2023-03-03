@@ -1,0 +1,13 @@
+{
+  "description": "Can view and share dashboards and insights via the M365 Insights app.",
+  "displayName": "Insights Business Leader",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.insights/reports/allProperties/read",
+        "microsoft.insights/programs/allProperties/update"
+      ],
+      "condition": null
+    }
+  ]
+}

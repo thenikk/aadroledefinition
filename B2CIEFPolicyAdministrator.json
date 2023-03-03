@@ -1,0 +1,12 @@
+{
+  "description": "Can create and manage trust framework policies in the Identity Experience Framework (IEF).",
+  "displayName": "B2C IEF Policy Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/b2cTrustFrameworkPolicy/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "description": "Can create or update Exchange Online recipients within the Exchange Online organization.",
+  "displayName": "Exchange Recipient Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.exchange/recipients/allProperties/allTasks",
+        "microsoft.office365.exchange/migration/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

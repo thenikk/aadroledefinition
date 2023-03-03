@@ -1,0 +1,15 @@
+{
+  "description": "Can manage settings for Microsoft Kaizala.",
+  "displayName": "Kaizala Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/authorizationPolicy/standard/read",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

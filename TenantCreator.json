@@ -1,0 +1,12 @@
+{
+  "description": "Create new Azure AD or Azure AD B2C tenants.",
+  "displayName": "Tenant Creator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/tenantManagement/tenants/create"
+      ],
+      "condition": null
+    }
+  ]
+}

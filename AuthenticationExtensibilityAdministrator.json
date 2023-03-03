@@ -1,0 +1,12 @@
+{
+  "description": "Customize sign in and sign up experiences for users by creating and managing custom authentication extensions.",
+  "displayName": "Authentication Extensibility Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/customAuthenticationExtensions/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ]
+}

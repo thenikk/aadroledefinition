@@ -1,0 +1,24 @@
+{
+  "description": "Can manage Conditional Access capabilities.",
+  "displayName": "Conditional Access Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/namedLocations/create",
+        "microsoft.directory/namedLocations/delete",
+        "microsoft.directory/namedLocations/standard/read",
+        "microsoft.directory/namedLocations/basic/update",
+        "microsoft.directory/conditionalAccessPolicies/create",
+        "microsoft.directory/conditionalAccessPolicies/delete",
+        "microsoft.directory/conditionalAccessPolicies/standard/read",
+        "microsoft.directory/conditionalAccessPolicies/owners/read",
+        "microsoft.directory/conditionalAccessPolicies/policyAppliedTo/read",
+        "microsoft.directory/conditionalAccessPolicies/basic/update",
+        "microsoft.directory/conditionalAccessPolicies/owners/update",
+        "microsoft.directory/conditionalAccessPolicies/tenantDefault/update",
+        "microsoft.directory/resourceNamespaces/resourceActions/authenticationContext/update"
+      ],
+      "condition": null
+    }
+  ]
+}

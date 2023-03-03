@@ -1,0 +1,14 @@
+{
+  "description": "Write, publish, manage, and review the organizational messages for end-users through Microsoft product surfaces.",
+  "displayName": "Organizational Messages Writer",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.organizationalMessages/allEntities/allProperties/allTasks",
+        "microsoft.office365.usageReports/allEntities/standard/read",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}

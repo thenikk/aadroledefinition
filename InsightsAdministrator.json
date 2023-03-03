@@ -1,0 +1,17 @@
+{
+  "description": "Has administrative access in the Microsoft 365 Insights app.",
+  "displayName": "Insights Administrator",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.azure.serviceHealth/allEntities/allTasks",
+        "microsoft.azure.supportTickets/allEntities/allTasks",
+        "microsoft.insights/allEntities/allProperties/allTasks",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ]
+}
